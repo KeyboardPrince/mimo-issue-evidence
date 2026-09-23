@@ -1,0 +1,92 @@
+{
+  "ses_ffe5f33426250ffelODdQfGbBO": {
+    "label": "D:////个人工作台 / 每日账单显示收支金额",
+    "toolStatusCounts": {
+      "skill:completed": 1,
+      "glob:completed": 1,
+      "grep:error": 12,
+      "glob:error": 72,
+      "read:error": 12,
+      "read:completed": 3,
+      "grep:completed": 2
+    },
+    "errorMessages": {
+      "Tool call cancelled because tool-call flooding was detected.": 96
+    },
+    "sampleErrors": {
+      "grep": {
+        "input": {
+          "pattern": "没写备注|校园骑行|星期"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "glob": {
+        "input": {
+          "pattern": "**/*.{md,json}"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "read": {
+        "input": {
+          "file_path": "C:\\Users\\Administrator\\.local\\share\\mimocode\\memory\\projects\\26fa68a5-c997-4cff-9aad-76689448a39d\\MEMORY.md"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      }
+    }
+  },
+  "ses_ffe5f468c9837ffenzM82ywMKf": {
+    "label": "E:////XiaomiMiMoProjects / anysearch mcp",
+    "toolStatusCounts": {
+      "grep:completed": 2,
+      "glob:completed": 2,
+      "read:completed": 1,
+      "history:completed": 4,
+      "bash:completed": 1,
+      "glob:error": 26,
+      "history:error": 29,
+      "grep:error": 1,
+      "bash:error": 4,
+      "read:error": 4
+    },
+    "errorMessages": {
+      "Tool call cancelled because tool-call flooding was detected.": 64
+    },
+    "sampleErrors": {
+      "glob": {
+        "input": {
+          "path": "E:\\memory",
+          "pattern": "**/*"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "history": {
+        "input": {
+          "operation": "search",
+          "query": "搜索失败 Glob Grep ledger 没写备注",
+          "scope": "project"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "grep": {
+        "input": {
+          "path": "D:\\个人工作台",
+          "pattern": "没写备注|星期|今日"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "bash": {
+        "input": {
+          "command": "Get-ChildItem \"D:\\个人工作台\\.git\" -ErrorAction SilentlyContinue | Select-Object Name; git -C \"D:\\个人工作台\" log --oneline -15 2>$null; git -C \"D:\\个人工作台\" status -sb 2>$null",
+          "description": "Check git status of project"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      },
+      "read": {
+        "input": {
+          "file_path": "D:\\个人工作台\\AGENTS.md"
+        },
+        "error": "Tool call cancelled because tool-call flooding was detected."
+      }
+    }
+  }
+}
